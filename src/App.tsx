@@ -15,8 +15,6 @@ import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 
-import { Provider } from 'react-redux'
-import store from './store'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,7 +37,6 @@ import './theme/variables.css';
 
 const App: React.FC = () => (
   <IonApp>
-    <Provider store={store}>
       <IonReactRouter>
         <IonTabs>
           <IonRouterOutlet>
@@ -64,7 +61,6 @@ const App: React.FC = () => (
           </IonTabBar>
         </IonTabs>
       </IonReactRouter>
-    </Provider>
   </IonApp>
 );
 
